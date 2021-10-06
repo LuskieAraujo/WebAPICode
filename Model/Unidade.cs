@@ -45,7 +45,6 @@ namespace CheckiPS.Model
 			comando.Parameters.Add(new SqlParameter("@Unidade", id));
 			SqlDataReader dr = comando.ExecuteReader();
 
-
 			while (dr.Read())
 			{
 				Entities.ProntoSocorro ps = new Entities.ProntoSocorro

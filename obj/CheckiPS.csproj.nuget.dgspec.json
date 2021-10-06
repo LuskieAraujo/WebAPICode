@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arauj\\source\\repos\\CheckiPS\\CheckiPS.csproj": {}
+    "C:\\Users\\arauj\\Documents\\WebAPICode\\CheckiPS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arauj\\source\\repos\\CheckiPS\\CheckiPS.csproj": {
+    "C:\\Users\\arauj\\Documents\\WebAPICode\\CheckiPS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arauj\\source\\repos\\CheckiPS\\CheckiPS.csproj",
+        "projectUniqueName": "C:\\Users\\arauj\\Documents\\WebAPICode\\CheckiPS.csproj",
         "projectName": "CheckiPS",
-        "projectPath": "C:\\Users\\arauj\\source\\repos\\CheckiPS\\CheckiPS.csproj",
+        "projectPath": "C:\\Users\\arauj\\Documents\\WebAPICode\\CheckiPS.csproj",
         "packagesPath": "C:\\Users\\arauj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arauj\\source\\repos\\CheckiPS\\obj\\",
+        "outputPath": "C:\\Users\\arauj\\Documents\\WebAPICode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\arauj\\AppData\\Roaming\\NuGet\\NuGet.Config",
