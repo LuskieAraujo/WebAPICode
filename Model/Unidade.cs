@@ -13,7 +13,7 @@ namespace CheckiPS.Model
 			List<Entities.Unidade> unidades = new List<Entities.Unidade>();
 			SqlCommand comando = new SqlCommand
 			{
-				CommandText = "LISTAR_UNIDADES",
+				CommandText = "LISTAR_UNIDADES"
 			};
 			SqlDataReader dr = new DataAccess().ExecutarProc(comando);
 
@@ -37,13 +37,27 @@ namespace CheckiPS.Model
 		public Entities.Unidade Obter(int id)
 		{
 			Entities.Unidade u = new Entities.Unidade();
-			SqlCommand comando = new SqlCommand();
-			comando.Connection = new DataAccess().AbreConexao();
+			SqlCommand comando = new SqlCommand
+			{
+				CommandText = "OBTER_UNIDADE"
+			};
+			comando.Parameters.Add(new SqlParameter("@Unidade", id));
+			SqlDataReader dr = new DataAccess().ExecutarProc(comando);
+			while (dr.Read())
+			{
+				u.Id = int.Parse(dr[0].ToString());
+				u.Nome = dr[1].ToString();
+				u.Ativo = dr[2].ToString();
+				u.LogradouroCompleto = dr[3].ToString();
+				u.Telefone = dr[4].ToString();
+				u.OrigemMV = int.Parse(dr[5].ToString());
+			}
+
+			comando.Parameters.Clear();
 
 			comando.CommandText = "OBTER_PS_POR_UNIDADE";
-			comando.CommandType = CommandType.StoredProcedure;
 			comando.Parameters.Add(new SqlParameter("@Unidade", id));
-			SqlDataReader dr = comando.ExecuteReader();
+			dr = new DataAccess().ExecutarProc(comando);
 
 			while (dr.Read())
 			{

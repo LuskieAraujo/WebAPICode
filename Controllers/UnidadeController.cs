@@ -9,6 +9,7 @@ namespace CheckiPS.Controllers
 	public class UnidadeController : ControllerBase
 	{
 		Model.Unidade model = new Model.Unidade();
+		Model.ProntoSocorro ps = new Model.ProntoSocorro();
 
 		[HttpGet]
 		public List<Unidade> Listar()
