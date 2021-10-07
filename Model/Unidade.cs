@@ -10,8 +10,8 @@ namespace CheckiPS.Model
 		
 		public List<Entities.Unidade> Listar()
 		{
-			List<Entities.Unidade> unidades = new List<Entities.Unidade>();
-			SqlCommand comando = new SqlCommand
+			List<Entities.Unidade> unidades = new();
+			SqlCommand comando = new()
 			{
 				CommandText = "LISTAR_UNIDADES"
 			};
@@ -36,13 +36,14 @@ namespace CheckiPS.Model
 
 		public Entities.Unidade Obter(int id)
 		{
-			Entities.Unidade u = new Entities.Unidade();
-			SqlCommand comando = new SqlCommand
+			Entities.Unidade u = new();
+			SqlCommand comando = new()
 			{
 				CommandText = "OBTER_UNIDADE"
 			};
 			comando.Parameters.Add(new SqlParameter("@Unidade", id));
 			SqlDataReader dr = new DataAccess().ExecutarProc(comando);
+
 			while (dr.Read())
 			{
 				u.Id = int.Parse(dr[0].ToString());
@@ -51,23 +52,6 @@ namespace CheckiPS.Model
 				u.LogradouroCompleto = dr[3].ToString();
 				u.Telefone = dr[4].ToString();
 				u.OrigemMV = int.Parse(dr[5].ToString());
-			}
-
-			comando.Parameters.Clear();
-
-			comando.CommandText = "OBTER_PS_POR_UNIDADE";
-			comando.Parameters.Add(new SqlParameter("@Unidade", id));
-			dr = new DataAccess().ExecutarProc(comando);
-
-			while (dr.Read())
-			{
-				Entities.ProntoSocorro ps = new Entities.ProntoSocorro
-				{
-					Id = int.Parse(dr[0].ToString()),
-					Nome = dr[1].ToString()
-				};
-
-				u.ProntoSocorros.Add(ps);
 			}
 
 			return u;
