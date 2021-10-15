@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using CheckiPS.Entities;
-using System;
+﻿using CheckiPS.Entities;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CheckiPS.Controllers
 {
