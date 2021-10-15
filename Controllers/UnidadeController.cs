@@ -8,8 +8,8 @@ namespace CheckiPS.Controllers
 	[ApiController]
 	public class UnidadeController : ControllerBase
 	{
-		Model.Unidade modelun = new();
-		Model.ProntoSocorro modelps = new();
+		readonly Model.Unidade modelun = new();
+		readonly Model.ProntoSocorro modelps = new();
 
 		[HttpGet]
 		public List<Unidade> Listar()
@@ -21,7 +21,7 @@ namespace CheckiPS.Controllers
 		public Unidade Obter([FromRoute] int id)
 		{
 			Unidade unidade = modelun.Obter(id);
-			unidade.ProntoSocorros = modelps.Listar(id);
+			unidade.ProntoSocorros = modelps.Obter(id);
 
 			return unidade;
 		}

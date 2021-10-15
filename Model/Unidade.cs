@@ -19,14 +19,10 @@ namespace CheckiPS.Model
 
 			while (dr.Read())
 			{
-				Entities.Unidade u = new Entities.Unidade
+				Entities.Unidade u = new()
 				{
 					Id = int.Parse(dr[0].ToString()),
-					Nome = dr[1].ToString(),
-					Ativo = dr[2].ToString(),
-					LogradouroCompleto = dr[3].ToString(),
-					Telefone = dr[4].ToString(),
-					OrigemMV = int.Parse(dr[5].ToString())
+					Nome = dr[1].ToString()
 				};
 
 				unidades.Add(u);

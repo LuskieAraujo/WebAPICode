@@ -9,7 +9,7 @@ namespace CheckiPS.Database
 {
 	public class DataAccess
 	{
-		public SqlConnection conexao = new SqlConnection();
+		public SqlConnection conexao = new();
 
 		public SqlDataReader ExecutarProc(SqlCommand comando)
 		{
