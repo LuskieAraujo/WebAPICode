@@ -11,7 +11,7 @@ namespace CheckiPS.Model
 			List<Entities.Especialidade> especialidades = new();
 			SqlCommand comando = new()
 			{
-				CommandText = "LISTAR_PRONTOSOCORROS"
+				CommandText = "LISTAR_ESPECIALIDADES"
 			};
 
 			SqlDataReader dr = new DataAccess().ExecutarProc(comando);
@@ -23,6 +23,30 @@ namespace CheckiPS.Model
 					Id = int.Parse(dr[0].ToString()),
 					Nome = dr[1].ToString()
 				};
+				especialidades.Add(esp);
+			}
+
+			return especialidades;
+		}
+
+		public List<Entities.Especialidade> Obter(int id)
+		{
+			List<Entities.Especialidade> especialidades = new();
+			SqlCommand comando = new()
+			{
+				CommandText = "OBTER_ESPECIALIDADE_POR_PS"
+			};
+			comando.Parameters.Add(new SqlParameter("@ProntoSocorro", id));
+			SqlDataReader dr = new DataAccess().ExecutarProc(comando);
+
+			while (dr.Read())
+			{
+				Entities.Especialidade esp = new()
+				{
+					Id = int.Parse(dr[0].ToString()),
+					Nome = dr[1].ToString()
+				};
+
 				especialidades.Add(esp);
 			}
 
