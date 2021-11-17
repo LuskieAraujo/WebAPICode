@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MAKdiFsHiKSdekwExIrqJu08KYaRrc6yU2IiZTN+PAhFliRsFTwZgAIMBAncSN2957Zp9DNeLimkKWEstWJR5A==",
+  "dgSpecHash": "vf/wD5xBdIA4MZfUO4+cQJ9ePm66kL9XSGr0GYciJF3TE5nUf6oIMRYGJv61OdGCKDvwYCIGfuHuqkwlEhF4mQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\arauj\\Documents\\WebAPICode\\CheckiPS.csproj",
+  "projectFilePath": "C:\\Users\\arauj\\Source\\Repos\\LuskieAraujo\\WebAPICode\\CheckiPS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\arauj\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\arauj\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
@@ -18,7 +18,11 @@
     "C:\\Users\\arauj\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
     "C:\\Users\\arauj\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512",
     "C:\\Users\\arauj\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
-    "C:\\Users\\arauj\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+    "C:\\Users\\arauj\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\arauj\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512",
+    "C:\\Users\\arauj\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\arauj\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\arauj\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

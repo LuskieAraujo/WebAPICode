@@ -641,11 +641,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arauj\\Documents\\WebAPICode\\CheckiPS.csproj",
+      "projectUniqueName": "C:\\Users\\arauj\\Source\\Repos\\LuskieAraujo\\WebAPICode\\CheckiPS.csproj",
       "projectName": "CheckiPS",
-      "projectPath": "C:\\Users\\arauj\\Documents\\WebAPICode\\CheckiPS.csproj",
+      "projectPath": "C:\\Users\\arauj\\Source\\Repos\\LuskieAraujo\\WebAPICode\\CheckiPS.csproj",
       "packagesPath": "C:\\Users\\arauj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arauj\\Documents\\WebAPICode\\obj\\",
+      "outputPath": "C:\\Users\\arauj\\Source\\Repos\\LuskieAraujo\\WebAPICode\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\arauj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -693,6 +693,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.12, 5.0.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -701,7 +719,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
